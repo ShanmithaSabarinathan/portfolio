@@ -169,6 +169,94 @@
             }
         }
     </style>
+    /* Premium dark portfolio upgrade */
+
+body {
+    background: #08080d;
+    color: #f5f3ff;
+    line-height: 1.8;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(8, 8, 13, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #272333;
+}
+
+.logo {
+    letter-spacing: 2px;
+    text-shadow: 0 0 18px #a78bfa;
+}
+
+.tag {
+    color: #c4b5fd;
+    font-weight: bold;
+}
+
+h1 {
+    letter-spacing: -2px;
+}
+
+h1 span {
+    color: #b9a0ff;
+    text-shadow: 0 0 30px rgba(167, 139, 250, 0.25);
+}
+
+h2 {
+    letter-spacing: -1px;
+}
+
+.card {
+    background: linear-gradient(145deg, #15141d, #0d0c12);
+    border: 1px solid #302940;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #a78bfa;
+    box-shadow: 0 10px 35px rgba(167, 139, 250, 0.12);
+}
+
+.btn {
+    border: 1px solid #b9a0ff;
+    box-shadow: 0 0 18px rgba(167, 139, 250, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(167, 139, 250, 0.3);
+}
+
+.skills span {
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.skills span:hover {
+    border-color: #a78bfa;
+    background: #211a31;
+}
+
+::selection {
+    background: #a78bfa;
+    color: #08080d;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        transition: none !important;
+    }
+}
 </head>
 
 <body>
