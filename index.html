@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shanmitha | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #080808;
+            color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            border-bottom: 1px solid #222;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #a78bfa;
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            margin-left: 18px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #a78bfa;
+        }
+
+        section {
+            padding: 75px 8%;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .tag {
+            color: #a78bfa;
+            letter-spacing: 3px;
+            font-size: 13px;
+        }
+
+        h1 {
+            font-size: clamp(42px, 8vw, 76px);
+            line-height: 1.15;
+            margin: 20px 0;
+        }
+
+        h1 span {
+            color: #a78bfa;
+        }
+
+        .hero p, .about p {
+            max-width: 600px;
+            color: #aaa;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 28px;
+            padding: 12px 22px;
+            background: #a78bfa;
+            color: #080808;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            width: fit-content;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            background: #111;
+            border: 1px solid #292929;
+            border-radius: 12px;
+            padding: 24px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: #a78bfa;
+            transform: translateY(-4px);
+        }
+
+        .card h3 {
+            color: #c4b5fd;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skills span {
+            border: 1px solid #383044;
+            background: #15111e;
+            padding: 10px 18px;
+            border-radius: 8px;
+            color: #ddd;
+        }
+
+        .contact a {
+            color: #c4b5fd;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #777;
+            border-top: 1px solid #222;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            section {
+                padding: 55px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">S.</div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="tag">ECE STUDENT · DEVELOPER</div>
+        <h1>Hi, I'm <span>Shanmitha.</span><br>
+        I build things with code.</h1>
+        <p>
+            An Electronics and Communication Engineering student
+            exploring programming, technology, and creative solutions.
+        </p>
+        <a class="btn" href="#projects">Explore My Work ↗</a>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me.</h2>
+        <p>
+            I'm an ECE student passionate about electronics,
+            programming, and learning new technologies.
+            I enjoy turning ideas into practical projects and
+            improving my skills one step at a time.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills.</h2>
+        <div class="skills">
+            <span>C</span>
+            <span>Python</span>
+            <span>Java</span>
+            <span>Electronics</span>
+            <span>GitHub</span>
+            <span>Problem Solving</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects.</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>ECE Engineering Toolkit</h3>
+                <p>A Python project created to support engineering
+                learning and useful ECE calculations.</p>
+                <br>
+                <a href="https://github.com/ShanmithaSabarinathan/ECE--Engineering-Toolkit"
+                   target="_blank" rel="noopener noreferrer"
+                   style="color:#c4b5fd">View on GitHub ↗</a>
+            </div>
+
+            <div class="card">
+                <h3>Java Projects</h3>
+                <p>Beginner-friendly Java programs exploring
+                programming concepts and practical applications.</p>
+            </div>
+
+            <div class="card">
+                <h3>Future Projects</h3>
+                <p>Exploring new ideas in electronics, embedded
+                systems, and software development.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Let's Connect.</h2>
+        <p>Interested in my work? Find me on GitHub.</p>
+        <a class="btn"
+           href="https://github.com/ShanmithaSabarinathan"
+           target="_blank" rel="noopener noreferrer">
+           Visit My GitHub ↗
+        </a>
+    </section>
+
+    <footer>
+        © 2026 Shanmitha · Built with curiosity.
+    </footer>
+
+</body>
+</html>
